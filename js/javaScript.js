@@ -1,6 +1,5 @@
 var tRex = document.getElementById("trex");
 var cactus = document.getElementById("cactus");
-var bg = document.getElementById("bg-road");
 var counter = 0;
 
 function jump() {
@@ -13,17 +12,16 @@ function jump() {
   }, 700);
 }
 var checkDead = setInterval(function () {
-  var tRexBottom = parseInt(
+  let tRexBottom = parseInt(
     window.getComputedStyle(tRex).getPropertyValue("bottom")
   );
-  var cactusLeft = parseInt(
+  let cactusLeft = parseInt(
     window.getComputedStyle(cactus).getPropertyValue("left")
   );
   if (tRexBottom <= 76 && cactusLeft <= 90 && cactusLeft >= 19) {
     cactus.style.animation = "none";
-    
+    alert("Game Over . Score :  " + Math.floor(counter / 100));
     counter = 0;
-    alert("game over . score: " + Math.floor(counter / 100));
     cactus.style.animation = "cactusAnimate 2.5s linear infinite";
   } else {
     counter++;
