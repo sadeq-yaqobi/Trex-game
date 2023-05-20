@@ -1,6 +1,9 @@
 # Trex Game
 
-![Trex Game Screenshot](images/demo-Trex-00.png)
+## Play the Game
+
+Play the Trex game [here](https://sadeq-yaqobi.github.io/Trex-game/).
+
 
 The Trex Game is a simple web-based game where the player controls a running Trex character, avoiding obstacles and scoring points. It is built using HTML, CSS, and JavaScript.
 
@@ -34,7 +37,7 @@ Once you have the game running in your web browser, use the following controls:
 - Your score will increase as you successfully avoid obstacles.
 - The game ends if the Trex character collides with an obstacle.
 
-![Trex Game Screenshot](images/demo-Trex-02.png)
+
 
 
 ## Contributing
